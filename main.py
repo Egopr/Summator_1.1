@@ -3,12 +3,28 @@
 Содержит основные окна для работы.
 '''
 
-from PyQt5 import QtWidgets, uic
+
+from PyQt5 import QtWidgets
+import adder
 import sys
 
 
 
 app = QtWidgets.QApplication(sys.argv)
-windows = uic.loadUi("summator_0.1.ui")
-windows.show()
+window = QtWidgets.QWidget()
+ui = adder.Ui_Form()
+ui.setupUi(window)
+window.show()
 sys.exit(app.exec())
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'summator_0.1.ui'
+# Form implementation generated from reading ui file 'adder_1.1.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -9,8 +9,6 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QApplication
-import sys
 
 
 class Ui_MainWindow(object):
@@ -122,16 +120,16 @@ class Ui_MainWindow(object):
         self.rad_hend = QtWidgets.QRadioButton(self.centralwidget)
         self.rad_hend.setGeometry(QtCore.QRect(240, 260, 82, 17))
         self.rad_hend.setObjectName("rad_hend")
-        MainWindow.setCentralWidget(self.centralwidget)
+        #MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 355, 21))
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
-        MainWindow.setMenuBar(self.menubar)
+        #MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
+        #MainWindow.setStatusBar(self.statusbar)
         self.actionOpen = QtWidgets.QAction(MainWindow)
         self.actionOpen.setObjectName("actionOpen")
         self.actionSave_As = QtWidgets.QAction(MainWindow)
@@ -161,9 +159,3 @@ class Ui_MainWindow(object):
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionOpen.setText(_translate("MainWindow", "Open"))
         self.actionSave_As.setText(_translate("MainWindow", "Save As..."))
-
-if __name__ == '__main__':
-
-    app = QApplication(sys.argv)
-    ex = Ui_MainWindow()
-    sys.exit(app.exec_())
